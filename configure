@@ -33,6 +33,7 @@ curl -LSo "$MY_HOME/.vim/autoload/pathogen.vim" \
 cd "$MY_HOME/.vim/bundle"
 
 git clone https://github.com/unc0/vim-gorilla-script.git
+git clone https://github.com/sterpe/vim-algol68.git
 git clone https://github.com/elzr/vim-json.git
 
 cd "$MY_HOME"
@@ -47,4 +48,10 @@ curl -LSo "$MY_HOME/.vim/colors/molokai.vim" \
 # /.swp 
 mkdir -p "$HOME/.swp"
 
-#echo "configuration complete."
+rm -rf "$MY_HOME/src"
+mkdir -p "$MY_HOME/src"
+
+curl -LSo "$MY_HOME/src/algol68g-2.8.tar.gz" \
+  http://jmvdveer.home.xs4all.nl/algol68g-2.8.tar.gz
+
+#lgol68g-2.8.tar.gz ./src/echo "configuration complete."
