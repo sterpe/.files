@@ -1,0 +1,50 @@
+#!/bin/bash
+
+MY_HOME=${PWD##}
+
+echo "$MY_HOME"
+
+rm -rf \
+  "$HOME/.bashrc" \
+  "$HOME/.bash_profile" \
+  "$HOME/.profile" \
+  "$HOME/.vimrc" \
+  "$HOME/.vim"
+
+ln -s "$MY_HOME/.bashrc" "$HOME/.bashrc"
+ln -s "$MY_HOME/.bash_profile" "$HOME/.bash_profile"
+ln -s "$MY_HOME/.profile" "$HOME/.profile"
+
+# /bin 
+mkdir -p "$HOME/bin"
+
+# vim
+ln -s "$MY_HOME/.vimrc" "$HOME/.vimrc"
+ln -s "$MY_HOME/.vim" "$HOME/.vim"
+
+# install pathogen
+rm -rf "$MY_HOME/.vim/autoload" "$MY_HOME/.vim/bundle"
+mkdir -p "$MY_HOME/.vim/autoload" "$MY_HOME/.vim/bundle"
+
+curl -LSo "$MY_HOME/.vim/autoload/pathogen.vim" \
+  https://tpo.pe/pathogen.vim
+
+# install pathogen bundles
+cd "$MY_HOME/.vim/bundle"
+
+git clone https://github.com/unc0/vim-gorilla-script.git
+git clone https://github.com/elzr/vim-json.git
+
+cd "$MY_HOME"
+
+#install latest molokai color scheme
+rm -rf "$MY_HOME/.vim/colors"
+mkdir -p "$MY_HOME/.vim/colors"
+
+curl -LSo "$MY_HOME/.vim/colors/molokai.vim" \
+  https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+
+# /.swp 
+mkdir -p "$HOME/.swp"
+
+#echo "configuration complete."
