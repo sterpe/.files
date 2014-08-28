@@ -21,8 +21,8 @@ filetype plugin on
 
 "colors
 set t_Co=256
-colo molokai
 set bg=dark
+colo molokai
 
 "search
 set nohlsearch

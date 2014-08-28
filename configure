@@ -41,13 +41,15 @@ cd vim-jslint/ftplugin/javascript/vim-jslint
 npm install
 cd "$MY_HOME/.vim/bundle"
 
+git clone https://github.com/sterpe/vim-after.git
 cd "$MY_HOME"
 
 #install latest molokai color scheme
 rm -rf "$MY_HOME/.vim/colors"
 mkdir -p "$MY_HOME/.vim/colors"
 
-curl -LSo "$MY_HOME/.vim/colors/molokai.vim" \
+curl -LSo \
+  "$MY_HOME/.vim/colors/molokai.vim" \
   https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 # /.swp 
@@ -56,6 +58,7 @@ mkdir -p "$HOME/.swp"
 rm -rf "$MY_HOME/tars"
 mkdir -p "$MY_HOME/tars"
 
-curl -LSo "$MY_HOME/tars/algol68g-2.8.tar.gz" \
+curl -LSo \
+  "$MY_HOME/tars/algol68g-2.8.tar.gz" \
   http://jmvdveer.home.xs4all.nl/algol68g-2.8.tar.gz
 
