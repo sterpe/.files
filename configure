@@ -35,6 +35,11 @@ cd "$MY_HOME/.vim/bundle"
 git clone https://github.com/unc0/vim-gorilla-script.git
 git clone https://github.com/sterpe/vim-algol68.git
 git clone https://github.com/elzr/vim-json.git
+git clone https://github.com/sterpe/vim-jslint.git
+# npm install this one's dependencies
+cd vim-jslint/ftplugin/javascript/jslint-vim
+npm install
+cd "$MY_HOME/.vim/bundle"
 
 cd "$MY_HOME"
 
@@ -48,10 +53,9 @@ curl -LSo "$MY_HOME/.vim/colors/molokai.vim" \
 # /.swp 
 mkdir -p "$HOME/.swp"
 
-rm -rf "$MY_HOME/src"
-mkdir -p "$MY_HOME/src"
+rm -rf "$MY_HOME/tars"
+mkdir -p "$MY_HOME/tars"
 
-curl -LSo "$MY_HOME/src/algol68g-2.8.tar.gz" \
+curl -LSo "$MY_HOME/tars/algol68g-2.8.tar.gz" \
   http://jmvdveer.home.xs4all.nl/algol68g-2.8.tar.gz
 
-#lgol68g-2.8.tar.gz ./src/echo "configuration complete."
