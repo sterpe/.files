@@ -37,7 +37,7 @@ git clone https://github.com/sterpe/vim-algol68.git
 git clone https://github.com/elzr/vim-json.git
 git clone https://github.com/sterpe/vim-jslint.git
 # npm install this one's dependencies
-cd vim-jslint/ftplugin/javascript/jslint-vim
+cd vim-jslint/ftplugin/javascript/vim-jslint
 npm install
 cd "$MY_HOME/.vim/bundle"
 
