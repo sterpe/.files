@@ -2,3 +2,5 @@
 .vim/bundle
 .vim/colors
 tars/
+.src/
+.bin/
