@@ -55,13 +55,13 @@ curl -LSo \
 # /.swp 
 mkdir -p "$HOME/.swp"
 
-rm -rf "$MY_HOME/tars"
-mkdir -p "$MY_HOME/tars"
+rm -rf "$MY_HOME/.src"
+mkdir -p "$MY_HOME/.src"
 
 curl -LSo \
-  "$MY_HOME/tars/algol68g-2.8.tar.gz" \
+  "$MY_HOME/.src/algol68g-2.8.tar.gz" \
   http://jmvdveer.home.xs4all.nl/algol68g-2.8.tar.gz
 
 curl -LSo \
-  "$MY_HOME/tars/ed_1.9.orig.tar.gz" \
+  "$MY_HOME/.src/ed_1.9.orig.tar.gz" \
   https://launchpad.net/ubuntu/trusty/+source/ed/1.9-2/+files/ed_1.9.orig.tar.gz
