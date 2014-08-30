@@ -62,3 +62,6 @@ curl -LSo \
   "$MY_HOME/tars/algol68g-2.8.tar.gz" \
   http://jmvdveer.home.xs4all.nl/algol68g-2.8.tar.gz
 
+curl -LSo \
+  "$MY_HOME/tars/ed_1.9.orig.tar.gz" \
+  https://launchpad.net/ubuntu/trusty/+source/ed/1.9-2/+files/ed_1.9.orig.tar.gz
