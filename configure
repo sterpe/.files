@@ -65,3 +65,7 @@ curl -LSo \
 curl -LSo \
   "$MY_HOME/.src/ed_1.9.orig.tar.gz" \
   https://launchpad.net/ubuntu/trusty/+source/ed/1.9-2/+files/ed_1.9.orig.tar.gz
+
+mkdir -p "$HOME/bin"
+cp ./bin/columns "$HOME/bin"
+ln -s "$HOME/bin/columns" "$HOME/bin/cols"
