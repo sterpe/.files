@@ -68,4 +68,5 @@ curl -LSo \
 
 mkdir -p "$HOME/bin"
 cp ./bin/columns "$HOME/bin"
+ln -s "$MY_HOME/bin/columns" "$HOME/bin/columns"
 ln -s "$HOME/bin/columns" "$HOME/bin/cols"
