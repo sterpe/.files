@@ -1,3 +1,4 @@
+alias ls='ls -F'
 alias ed='/usr/local/bin/ed -G'
 alias red='/usr/local/bin/red -G'
 
