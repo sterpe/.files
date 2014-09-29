@@ -6,6 +6,7 @@ echo "$MY_HOME"
 
 rm -rf \
   "$HOME/.bashrc" \
+  "$HOME/.bash_local" \
   "$HOME/.bash_profile" \
   "$HOME/.profile" \
   "$HOME/.vimrc" \
@@ -14,10 +15,16 @@ rm -rf \
 ln -s "$MY_HOME/.bashrc" "$HOME/.bashrc"
 ln -s "$MY_HOME/.bash_profile" "$HOME/.bash_profile"
 ln -s "$MY_HOME/.profile" "$HOME/.profile"
+ln -s "$MY_HOME/.bash_local" "$HOME/.bash_local"
 
 # /bin 
 mkdir -p "$HOME/bin"
 
+# git-completion.bash
+rm "$HOME/.git-completion.bash"
+curl -LSo \
+	"$HOME/.git-completion.bash" \
+	https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 # vim
 ln -s "$MY_HOME/.vimrc" "$HOME/.vimrc"
 ln -s "$MY_HOME/.vim" "$HOME/.vim"
@@ -67,6 +74,7 @@ curl -LSo \
   https://launchpad.net/ubuntu/trusty/+source/ed/1.9-2/+files/ed_1.9.orig.tar.gz
 
 mkdir -p "$HOME/bin"
-cp ./bin/columns "$HOME/bin"
+rm "$HOME/bin/columns"
+rm "$HOME/bin/cols"
 ln -s "$MY_HOME/bin/columns" "$HOME/bin/columns"
 ln -s "$HOME/bin/columns" "$HOME/bin/cols"
