@@ -2,8 +2,6 @@ if [[ -r ~/.bash_local ]]; then
 	. ~/.bash_local
 fi
 alias ls='ls -F'
-alias ed='/usr/local/bin/ed -G'
-alias red='/usr/local/bin/red -G'
 
 # Custom command prompts
 # \h:\W \u\$

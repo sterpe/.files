@@ -70,8 +70,8 @@ curl -LSo \
   http://jmvdveer.home.xs4all.nl/algol68g-2.8.tar.gz
 
 curl -LSo \
-  "$MY_HOME/.src/ed_1.9.orig.tar.gz" \
-  https://launchpad.net/ubuntu/trusty/+source/ed/1.9-2/+files/ed_1.9.orig.tar.gz
+  "$MY_HOME/.src/ed-1.10.tar.lz" \
+  http://gnu.mirrors.hoobly.com/gnu/ed/ed-1.10.tar.lz
 
 mkdir -p "$HOME/bin"
 rm "$HOME/bin/columns"
