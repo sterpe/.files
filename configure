@@ -76,5 +76,7 @@ curl -LSo \
 mkdir -p "$HOME/bin"
 rm "$HOME/bin/columns"
 rm "$HOME/bin/cols"
+rm "$HOME/bin/clear"
 ln -s "$MY_HOME/bin/columns" "$HOME/bin/columns"
+ln -s "$MY_HOME/bin/clear" "$HOME/bin/clear"
 ln -s "$HOME/bin/columns" "$HOME/bin/cols"
