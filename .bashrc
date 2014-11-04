@@ -15,6 +15,7 @@ set_prompt () {
 	else
 	    PS1+="\$? "
 	fi
+	PS1+=`date "+%H:%M:%S "`
 	PS1+="\u@\W π "
 }
 PROMPT_COMMAND="set_prompt; $PROMPT_COMMAND"
