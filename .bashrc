@@ -3,6 +3,7 @@ if [[ -r ~/.bash_local ]]; then
 fi
 
 alias ls='ls -F'
+alias la='ls -lah'
 
 # Custom command prompts
 # \h:\W \u\$ #PS1
@@ -16,7 +17,7 @@ set_prompt () {
 	    PS1+="\$? "
 	fi
 	PS1+=`date "+%H:%M:%S "`
-	PS1+="\u@\W π "
+	PS1+="\u@\W λ "
 }
 PROMPT_COMMAND="set_prompt; $PROMPT_COMMAND"
 PS2='	'
