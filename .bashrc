@@ -2,13 +2,45 @@ if [[ -r ~/.bash_local ]]; then
 	. ~/.bash_local
 fi
 
-alias ls='ls -F'
-alias la='ls -lah'
-alias status='git status'
-alias add='git add'
-alias commit='git commit'
-alias push='git push'
-alias pull='git pull'
+#alias status='git status'
+#alias add='git add'
+#alias commit='git commit'
+#alias push='git push'
+#alias pull='git pull'
+function checkout() {
+	git checkout "$@"
+}
+export -f checkout
+function push() {
+	git push "$@"
+}
+export -f push
+function pull() {
+	git pull "$@"
+}
+export -f pull
+function commit() {
+	git commit "$@"
+
+}
+export -f commit
+function add() { 
+	git add "$@"
+}
+export -f add
+function status() {
+	git status "$@"
+}
+export -f status
+alias _ls='/bin/ls'
+function ls() {
+	_ls -F "$@"
+}
+export -f ls
+function la() {
+	_ls -lahF "$@"
+}
+export -f la
 
 # Custom command prompts
 # \h:\W \u\$ #PS1
