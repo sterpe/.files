@@ -48,8 +48,6 @@ cd vim-jslint/ftplugin/javascript/vim-jslint
 npm install
 cd "$MY_HOME/.vim/bundle"
 
-git clone https://github.com/sterpe/vim-after.git
-cd "$MY_HOME"
 
 #install latest molokai color scheme
 rm -rf "$MY_HOME/.vim/colors"
@@ -62,16 +60,20 @@ curl -LSo \
 # /.swp 
 mkdir -p "$HOME/.swp"
 
-rm -rf "$MY_HOME/.src"
-mkdir -p "$MY_HOME/.src"
+rm -rf "$MY_HOME/src"
+mkdir -p "$MY_HOME/src"
 
 curl -LSo \
-  "$MY_HOME/.src/algol68g-2.8.tar.gz" \
+  "$MY_HOME/src/algol68g-2.8.tar.gz" \
   http://jmvdveer.home.xs4all.nl/algol68g-2.8.tar.gz
 
 curl -LSo \
-  "$MY_HOME/.src/ed-1.10.tar.lz" \
+  "$MY_HOME/src/ed-1.10.tar.lz" \
   http://gnu.mirrors.hoobly.com/gnu/ed/ed-1.10.tar.lz
+
+curl -LSo \
+    "$MY_HOME/src/mplus_bitmap_fonts-2.2.4.tar.gz" \
+    http://sourceforge.jp/frs/redir.php?m=jaist&f=%2Fmplus-fonts%2F5030%2Fmplus_bitmap_fonts-2.2.4.tar.gz
 
 mkdir -p "$HOME/bin"
 rm "$HOME/bin/columns"

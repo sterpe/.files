@@ -1,6 +1,6 @@
+.DS_Store
 .vim/autoload
 .vim/bundle
 .vim/colors
 tars/
-.src/
-.bin/
+src/
