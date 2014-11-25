@@ -48,6 +48,8 @@ export -f la
 set_prompt () {
 	Last_Command=$? # Must come first!
 	PS1=""
+# 	PS1+="\n"
+# 	PS1+="\H:\w\n"
 #	if [[ $Last_Command == 0 ]]; then
 #	    PS1+="\$? "
 #	else
@@ -67,7 +69,7 @@ set_prompt () {
 		PS1+="]"
 	fi
 	PS1+=" "
-	PS1+="\u@\W "
+	PS1+="<\H> \u@\W "
 	PS1+="λ "
 }
 PROMPT_COMMAND="set_prompt; history -a; history -c; history -r; $PROMPT_COMMAND"
