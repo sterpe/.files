@@ -17,8 +17,8 @@ ln -s "$MY_HOME/.bash_profile" "$HOME/.bash_profile"
 ln -s "$MY_HOME/.profile" "$HOME/.profile"
 ln -s "$MY_HOME/.bash_local" "$HOME/.bash_local"
 
-# /bin 
-mkdir -p "$HOME/bin"
+# /.bin 
+mkdir -p "$HOME/.bin"
 
 # git-completion.bash
 rm "$HOME/.git-completion.bash"
@@ -71,14 +71,11 @@ curl -LSo \
   "$MY_HOME/src/ed-1.10.tar.lz" \
   http://gnu.mirrors.hoobly.com/gnu/ed/ed-1.10.tar.lz
 
-curl -LSo \
-    "$MY_HOME/src/mplus_bitmap_fonts-2.2.4.tar.gz" \
-    http://sourceforge.jp/frs/redir.php?m=jaist&f=%2Fmplus-fonts%2F5030%2Fmplus_bitmap_fonts-2.2.4.tar.gz
+# curl -LSo \
+# 	"$MY_HOME/src/mplus-TESTFLIGHT-058.tar.xz" \
+# 	http://sourceforge.jp/frs/redir.php?m=jaist&f=%2Fmplus-fonts%2F6650%2Fmplus-TESTFLIGHT-058.tar.xz
 
-mkdir -p "$HOME/bin"
-rm "$HOME/bin/columns"
-rm "$HOME/bin/cols"
-rm "$HOME/bin/clear"
-ln -s "$MY_HOME/bin/columns" "$HOME/bin/columns"
-ln -s "$MY_HOME/bin/clear" "$HOME/bin/clear"
-ln -s "$HOME/bin/columns" "$HOME/bin/cols"
+mkdir -p "$HOME/.bin"
+ln -sF "$MY_HOME/bin/columns" "$HOME/.bin/columns"
+ln -sF "$MY_HOME/bin/clear" "$HOME/.bin/clear"
+ln -sF "$HOME/.bin/columns" "$HOME/.bin/cols"

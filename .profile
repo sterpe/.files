@@ -24,6 +24,11 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
 
+# set PATH so it includes user's private /.bin if it exists
+if [ -d "$HOME/.bin" ] ; then
+  PATH="$HOME/.bin:$PATH"
+fi
+
 # OSX terminal colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
