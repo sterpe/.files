@@ -33,10 +33,10 @@ function status() {
 }
 export -f status
 alias _ls='/bin/ls'
-function ls() {
+function l() {
 	_ls -F "$@"
 }
-export -f ls
+export -f l
 function la() {
 	_ls -lahF "$@"
 }
@@ -77,3 +77,5 @@ PS2='	'
 HISTSIZE=5000
 HISTFILESIZE=10000
 shopt -s histappend
+shopt -s cmdhist
+
