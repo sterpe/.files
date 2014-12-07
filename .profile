@@ -24,15 +24,23 @@ if [ -d "$HOME/bin" ] ; then
   PATH="$HOME/bin:$PATH"
 fi
 
-# set PATH so it includes user's private /.bin if it exists
-if [ -d "$HOME/.bin" ] ; then
-  PATH="$HOME/.bin:$PATH"
-fi
-
 # OSX terminal colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# System editor command
+export EDITOR=ed
 
+# Java Home
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# rvm
 export PATH="$PATH:$HOME/.rvm/bin"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# git-completion
+[[ -f "$HOME/.git-completion.bash" ]] \
+	&& source "$HOME/.git-completion.bash"
+
+# rvm 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] \
+	&& source "$HOME/.rvm/scripts/rvm"
