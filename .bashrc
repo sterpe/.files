@@ -79,3 +79,5 @@ HISTFILESIZE=10000
 shopt -s histappend
 shopt -s cmdhist
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
