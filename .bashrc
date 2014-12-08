@@ -40,6 +40,12 @@ function cle() {
 function path() {
 	echo "$PATH"
 }
+function la() {
+	ls -fF "$@"
+}
+function ll() {
+	ls -fl "$@"
+}
 
 export -f eighty_columns
 export -f cle
