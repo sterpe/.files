@@ -50,3 +50,5 @@ function ll() {
 export -f eighty_columns
 export -f cle
 export -f path
+export -f la
+export -f ll
