@@ -34,8 +34,22 @@ export EDITOR=ed
 # Java Home
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+# mysql
+PATH=$PATH:/usr/local/mysql/bin
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DLYD_LIBRARY_PATH
+
+# maven
+PATH=$PATH:/Users/sterpe/.springsource/apache-maven-3.0.3/bin
+
+# plan9
+export PLAN9=/user/local/plan9
+PATH=$PATH:$PLAN9/bin
+
 # rvm
 export PATH="$PATH:$HOME/.rvm/bin"
+
+# git
+export GIT_SSL_NO_VERIFY=true
 
 # git-completion
 [[ -f "$HOME/.git-completion.bash" ]] \
