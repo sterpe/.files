@@ -21,7 +21,7 @@ set_prompt () {
 PROMPT_COMMAND="set_prompt; history -a; history -c;\
  history -r; $PROMPT_COMMAND"
 
-PS2='	'
+PS2='  '
 
 HISTSIZE=5000
 HISTFILESIZE=10000
@@ -33,7 +33,7 @@ function eighty_columns() {
 	b="     +48     +56     +64     +72     +80"
 	echo "$a$b"
 }
-function cle() {
+function clear() {
 	/usr/bin/clear
 	eighty_columns
 }
@@ -46,9 +46,15 @@ function la() {
 function ll() {
 	ls -fl "$@"
 }
+function show.files() {
+	defaults write com.apple.finder AppleShowAllFiles YES
+}
+function hide.files() {
+	defaults write com.apple.finder AppleShowAllFiles NO
+}
 
 export -f eighty_columns
-export -f cle
+export -f clear
 export -f path
 export -f la
 export -f ll
