@@ -29,7 +29,7 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # System editor command
-export EDITOR=ed
+export EDITOR="$HOME/bin/ed --loose-exit-status"
 
 # Java Home
 export JAVA_HOME=$(/usr/libexec/java_home)
