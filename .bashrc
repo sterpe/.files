@@ -52,6 +52,11 @@ function show.files() {
 function hide.files() {
 	defaults write com.apple.finder AppleShowAllFiles NO
 }
+function eject() {
+	INSTR="tell app \"Finder\" to eject "
+	INSTR+="(every disk whose ejectable is true)"
+	osascript -e "$INSTR"
+}
 
 export -f eighty_columns
 export -f clear
