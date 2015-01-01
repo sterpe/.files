@@ -57,6 +57,13 @@ function eject() {
 	CMD+="(every disk whose ejectable is true)"
 	if [ "$1" = "all" ] ; then
 		osascript -e "$CMD"
+		echo "All external drives ejected."
+	fi
+}
+function remount() {
+	if [ "$1" = "all" ] ; then
+		diskutil list | sed -n '/^\/dev/p' | tail -n +2 |
+			sed 's/.*/diskutil mountDisk &/' | sh
 	fi
 }
 
@@ -66,3 +73,4 @@ export -f path
 export -f la
 export -f ll
 export -f eject
+export -f remount
