@@ -28,6 +28,18 @@ HISTFILESIZE=10000
 shopt -s histappend
 shopt -s cmdhist
 
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 function eighty_columns() {
 	a="      +8     +16     +24     +32     +40"
 	b="     +48     +56     +64     +72     +80"
@@ -41,10 +53,10 @@ function path() {
 	echo "$PATH"
 }
 function la() {
-	ls -fF "$@"
+	ls -fF "$@" --color=auto
 }
 function ll() {
-	ls -fl "$@"
+	ls -fl "$@" --color=auto
 }
 function show.files() {
 	defaults write com.apple.finder AppleShowAllFiles YES

@@ -25,8 +25,8 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # OSX terminal colors
-# export CLICOLOR=1
-# export LSCOLORS=GxFxCxDxBxegedabagaced
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # System editor command
 export EDITOR="$HOME/bin/ed --loose-exit-status"
