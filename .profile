@@ -17,7 +17,7 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # fink
-test -r /sw/bin/init.sh && . /sw/bin/init.sh
+# test -r /sw/bin/init.sh && . /sw/bin/init.sh
 
 # set PATH so it includes user's private /bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -25,14 +25,14 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # OSX terminal colors
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+# export CLICOLOR=1
+# export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # System editor command
 export EDITOR="$HOME/bin/ed --loose-exit-status"
 
 # Java Home
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=/usr/lib/jvm/default-java
 
 # rvm
 export PATH="$PATH:$HOME/.rvm/bin"
