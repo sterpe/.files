@@ -45,7 +45,7 @@ function eighty_columns() {
 	b="     +48     +56     +64     +72     +80"
 	echo "$a$b"
 }
-function clear() {
+function colmarks() {
 	/usr/bin/clear
 	eighty_columns
 }
@@ -80,7 +80,7 @@ function remount() {
 }
 
 export -f eighty_columns
-export -f clear
+export -f colmarks
 export -f path
 export -f la
 export -f ll
