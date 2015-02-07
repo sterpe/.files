@@ -37,6 +37,12 @@ export JAVA_HOME=/usr/lib/jvm/default-java
 # rvm
 export PATH="$PATH:$HOME/.rvm/bin"
 
+# emscripten
+source "$HOME/src/emsdk_portable/emsdk_env.sh"
+
+# github.rp-core
+export GIT_SSL_NO_VERIFY=true
+
 # git-completion
 [[ -f "$HOME/.git-completion.bash" ]] \
 	&& source "$HOME/.git-completion.bash"
