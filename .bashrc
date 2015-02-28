@@ -15,7 +15,7 @@ set_prompt () {
 	fi
 	PS1+=" "
 	PS1+="<\u@\h:\w> "
-	PS1+="λ "
+	PS1+="$ "
 }
 
 PROMPT_COMMAND="set_prompt; history -a; history -c;\
