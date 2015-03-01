@@ -1,0 +1,46 @@
+function eighty_columns() {
+	a="      +8     +16     +24     +32     +40"
+	b="     +48     +56     +64     +72     +80"
+	echo "$a$b"
+}
+function fcols() {
+	/usr/bin/clear
+	eighty_columns
+}
+function path() {
+	echo "$PATH"
+}
+function la() {
+	ls -fF "$@" --color=auto
+}
+function ll() {
+	ls -fl "$@" --color=auto
+}
+function show.files() {
+	defaults write com.apple.finder AppleShowAllFiles YES
+}
+function hide.files() {
+	defaults write com.apple.finder AppleShowAllFiles NO
+}
+function eject() {
+	CMD="tell app \"Finder\" to eject "
+	CMD+="(every disk whose ejectable is true)"
+	if [ "$1" = "all" ] ; then
+		osascript -e "$CMD"
+		echo "All external drives ejected."
+	fi
+}
+function remount() {
+	if [ "$1" = "all" ] ; then
+		diskutil list | sed -n '/^\/dev/p' | tail -n +2 |
+			sed 's/.*/diskutil mountDisk &/' | sh
+	fi
+}
+
+export -f eighty_columns
+export -f colmarks
+export -f path
+export -f la
+export -f ll
+export -f eject
+export -f remount

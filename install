@@ -5,6 +5,7 @@ THIS=${PWD##}
 rm -rf \
 	"$HOME/.bashrc" \
 	"$HOME/.bash_profile" \
+	"$HOME/.bash_func" \
 	"$HOME/.profile" \
 	"$HOME/.vimrc" \
 	"$HOME/.vim"
@@ -12,6 +13,7 @@ rm -rf \
 ln -sF "$THIS/.bashrc" "$HOME/.bashrc"
 ln -sF "$THIS/.profile" "$HOME/.profile"
 ln -sF "$THIS/.profile" "$HOME/.bash_profile"
+ln -sF "$THIS/.bash_func" "$HOME/.bash_func"
 
 # /bin 
 mkdir -p "$HOME/bin"
