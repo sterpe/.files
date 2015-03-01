@@ -38,7 +38,7 @@ function remount() {
 }
 
 export -f eighty_columns
-export -f colmarks
+export -f fcols
 export -f path
 export -f la
 export -f ll
