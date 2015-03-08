@@ -14,6 +14,9 @@ if [ -n "$BASH_VERSION" ]; then
   if [ -f "$HOME/.bashrc" ]; then
     . "$HOME/.bashrc"
   fi
+  if [ -f "$HOME/.bash_local" ]; then
+    . "$HOME/.bash_local"
+  fi
 fi
 
 # fink

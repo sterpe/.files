@@ -15,15 +15,16 @@ set_prompt () {
 	fi
 	PS1+=" "
 	PS1+="<\u@\h:\w> "
-	PS1+="λ "
+	PS1+="$ "
 }
 
-PROMPT_COMMAND="set_prompt; history -a; history -c;\
- history -r; $PROMPT_COMMAND"
+# PROMPT_COMMAND="set_prompt; history -a; history -c;\
+#  history -r; $PROMPT_COMMAND"
+PROMPT_COMMAND="set_prompt; $PROMPT_COMMAND"
 
 PS2='  '
 
-HISTSIZE=5000
+HISTSIZE=10000
 HISTFILESIZE=10000
 shopt -s histappend
 shopt -s cmdhist
@@ -33,7 +34,7 @@ function eighty_columns() {
 	b="     +48     +56     +64     +72     +80"
 	echo "$a$b"
 }
-function clear() {
+function ccl() {
 	/usr/bin/clear
 	eighty_columns
 }
@@ -68,7 +69,7 @@ function remount() {
 }
 
 export -f eighty_columns
-export -f clear
+export -f ccl
 export -f path
 export -f la
 export -f ll
