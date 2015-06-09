@@ -50,3 +50,9 @@ chmod
 ````
 	find . -type f -name '*.php' -exec chmod 644 {} \;
 ````
+
+* Pretty print xml
+
+```
+	cat ugly.xml | xmllint --format - > pretty.xml
+```

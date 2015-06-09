@@ -75,3 +75,6 @@ export -f la
 export -f ll
 export -f eject
 export -f remount
+
+export NVM_DIR="/Users/sterpe/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

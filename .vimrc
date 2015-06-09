@@ -50,3 +50,6 @@ au BufNewFile,BufRead *.jsx set filetype=jsx
 au BufNewFile *.jsx call JSX()
 au BufNewFile *.js call JS()
 au BufNewFile *.html call HTML()
+
+nnoremap <F5> "=strftime("%T ")<CR>P
+inoremap <F5> <C-R>=strftime("%T ")<CR>
