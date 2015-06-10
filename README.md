@@ -56,3 +56,9 @@ chmod
 ```
 	cat ugly.xml | xmllint --format - > pretty.xml
 ```
+
+* Clear ~/.bash_history completely
+
+```
+	cat /dev/null > ~/.bash_history && history -c && exit
+```
