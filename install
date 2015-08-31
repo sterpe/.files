@@ -71,3 +71,5 @@ curl -LSo \
 # 	"$THIS/tars/mplus-TESTFLIGHT-058.tar.xz" \
 # 	http://sourceforge.jp/frs/redir.php?m=jaist&f=%2Fmplus-fonts%2F6650%2Fmplus-TESTFLIGHT-058.tar.xz
 
+
+cd ~/bin; npm i git+https://github.com/sterpe/jshint-smart.git
