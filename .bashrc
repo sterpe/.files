@@ -67,6 +67,9 @@ function remount() {
 			sed 's/.*/diskutil mountDisk &/' | sh
 	fi
 }
+function git_init() {
+	. ~/bin/git-init "$@"
+}
 
 export -f eighty_columns
 export -f ccl
@@ -75,6 +78,8 @@ export -f la
 export -f ll
 export -f eject
 export -f remount
+export -f git_init
 
+export NODE_REPL_HISTORY_FILE="$HOME/.node_repl_hist"
 export NVM_DIR="/Users/sterpe/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
