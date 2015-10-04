@@ -43,5 +43,7 @@ so this answer should get you what you need moving forward.
 -
 
 
-See:  http://apple.stackexchange.com/questions/196224/unix-ln-s-command-not-permitted-in-osx-el-capitan-beta3
-And:  http://stackoverflow.com/questions/32590053/copying-file-under-root-got-failed-in-os-x-el-capitan-10-11/32590885#32590885
+#####See also:
+
+http://apple.stackexchange.com/questions/196224/unix-ln-s-command-not-permitted-in-osx-el-capitan-beta3
+http://stackoverflow.com/questions/32590053/copying-file-under-root-got-failed-in-os-x-el-capitan-10-11/32590885#32590885
