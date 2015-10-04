@@ -7,6 +7,7 @@ subdirectory that is excluded from this rule is "/usr/local")
 
 One can disable this rootless mode with the following commands:
 
+// Do the instructions below before you do this...
 ```
 $ sudo nvram boot-args="rootless=0"
 $ sudo reboot
