@@ -1,3 +1,6 @@
+http://apple.stackexchange.com/questions/196224/unix-ln-s-command-not-permitted-in-osx-el-capitan-beta3
+http://stackoverflow.com/questions/32590053/copying-file-under-root-got-failed-in-os-x-el-capitan-10-11/32590885#32590885
+
 This is the so called "rootless" mode in the new version of OS X.
 It effectively makes certain system directories read-only (even for
 admins). "/usr" is one of those protected directories (the only
