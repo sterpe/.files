@@ -56,10 +56,10 @@ function hide.files() {
 function eject() {
 	CMD="tell app \"Finder\" to eject "
 	CMD+="(every disk whose ejectable is true)"
-	if [ "$1" = "all" ] ; then
+	# if [ "$1" = "all" ] ; then
 		osascript -e "$CMD"
 		echo "All external drives ejected."
-	fi
+	# fi
 }
 function remount() {
 	if [ "$1" = "all" ] ; then
@@ -81,5 +81,6 @@ export -f remount
 export -f git_init
 
 export NODE_REPL_HISTORY_FILE="$HOME/.node_repl_hist"
-export NVM_DIR="/Users/sterpe/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR=/Users/sterpe/.nvm
+[ -s /usr/local/nvm/nvm.sh ] && . /usr/local/nvm/nvm.sh
+nvm use system
