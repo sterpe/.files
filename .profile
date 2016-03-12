@@ -37,8 +37,15 @@ export EDITOR="/usr/local/bin/ed --loose-exit-status"
 # Java Home
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+# scala
+export SCALA_HOME=/usr/local/share/scala
+PATH=$PATH:$SCALA_HOME/bin
+
+# go
+export GOPATH=$HOME/work/go
+
 # rvm
-export PATH="$PATH:$HOME/.rvm/bin"
+PATH="$PATH:$HOME/.rvm/bin"
 
 # git-completion
 [[ -f "$HOME/.git-completion.bash" ]] \
@@ -47,3 +54,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # rvm 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] \
 	&& source "$HOME/.rvm/scripts/rvm"
+
+export PATH
