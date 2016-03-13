@@ -1,3 +1,9 @@
+" This is pretty sparse; actually, I've been using `ed` exclusively
+" the last couple of years.
+"
+" https://www.gnu.org/software/ed/
+"
+
 " Start Pathogen
 " See https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
