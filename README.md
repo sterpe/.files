@@ -1,5 +1,10 @@
-. files
-===
+#_.files
+
+
+## installation
+	git clone https://github.com/sterpe/_.files.git
+	cd _.files
+	make && make install
 
 git
 ===

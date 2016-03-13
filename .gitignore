@@ -1,6 +1,2 @@
-.DS_Store
-.vim/autoload
-.vim/bundle
-.vim/colors
-tars/
-src/
+vim/
+git-completion.bash
