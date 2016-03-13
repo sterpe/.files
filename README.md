@@ -23,7 +23,7 @@
 - `csrutil enable`
 - Reboot.
 
-### reset NVRAM (PRAM) (OS X)
+### reset NVRAM (PRAM) (Macbook)
 - Shut down the Mac.
 - Power on the machine.
 - Press and hold ⌘-Option-P-R immediately after the startup sound.
