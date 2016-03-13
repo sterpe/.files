@@ -9,8 +9,8 @@
 ## notes to self
 
 ### unicode key codes
-- ⌘: U+2318
-- λ: U+03BB
+- ⌘: `U+2318`
+- λ: `U+03BB`
 
 ### disable rootless mode (OS X)
 - Reboot into Recovery Mode (reboot and hold down ⌘-R).
