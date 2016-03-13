@@ -6,6 +6,35 @@
 	cd _.files
 	make && make install
 
+## notes to self
+
+### disable rootless mode (OS X)
+- Reboot into Recovery Mode (reboot and hold down `⌘--R`).
+- Open a Terminal Window.
+- `csrutil disable`
+- Reboot.
+
+### re-enable rootless mode (OS X)
+- Repeat steps 1 & 2 above.
+- `csrutil enable`
+- Reboot.
+
+### reset NVRAM (PRAM) (OS X)
+- Shut down the Mac.
+- Power on the machine.
+- Press and hold `⌘--Option-P-R` immediately after the startup sound.
+- Hold `⌘--Option-P-R` until the machine restarts and you hear the second startup sound.
+- Release the keys.
+
+### reset the SMC (Macbook)
+- Shutdown the Mac.
+- Plug in the MagSafe power adapter to a power source and to the Mac.
+- Using the _built-in keyboard_, press `Shift-Control-Option` on the _left side_
+of the keyboard, and press the power button at the same time.
+- Release all the keys, then press the power button again to turn on the Mac.
+
+(The LED on Magsafe power adapters might change states or temporarily turn off
+when you reset the SMC.)
 git
 ===
 * Checkout a specific tag
