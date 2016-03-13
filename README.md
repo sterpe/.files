@@ -39,6 +39,15 @@ of the keyboard, and press the power button at the same time.
 
 (The LED on Magsafe power adapters might change states or temporarily turn off
 when you reset the SMC.)
+
+### show hidden files in finder
+	defaults write com.apple.finder AppleShowAllFiles YES
+
+### hide hidden files in finder
+	defaults write com.apple.finder AppleShowAllFiles NO
+
+### eject all disks
+	osascript -e "tell app \"Finder\" to eject (every disk whose ejectable is true)"
 git
 ===
 * Checkout a specific tag
