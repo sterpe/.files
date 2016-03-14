@@ -8,7 +8,8 @@
 
 ## notes to self
 
-### unicode key codes
+### unicode key codes (`Alt+WXYZ`)
+- `©: U+00A9`
 - `⌘: U+2318`
 - `λ: U+03BB`
 
