@@ -42,7 +42,8 @@ export SCALA_HOME=/usr/local/share/scala
 PATH=$PATH:$SCALA_HOME/bin
 
 # go
-export GOPATH=$HOME/work/go
+export GOPATH=$HOME/documents/go
+PATH=$PATH:$GOPATH/bin
 
 # rvm
 PATH="$PATH:$HOME/.rvm/bin"
