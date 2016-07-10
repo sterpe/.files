@@ -27,10 +27,6 @@ HISTFILESIZE=10000
 shopt -s histappend
 shopt -s cmdhist
 
-function rm() {
-	/usr/local/bin/trash $@
-}
-
 function ll() {
 	ls -fl "$@"
 }
@@ -54,9 +50,10 @@ function uneject() {
 export NVM_DIR=/Users/sterpe/.nvm
 [ -s /usr/local/nvm/nvm.sh ] && . /usr/local/nvm/nvm.sh && nvm use system
 
-export -f rm
 export -f ll
 export -f show
 export -f hide
 export -f eject
 export -f uneject
+
+alias irssi="irssi -c chat.freenode.net"
