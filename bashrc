@@ -57,3 +57,4 @@ export -f eject
 export -f uneject
 
 alias dscache='dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+alias irssi="irssi -c chat.freenode.net"
