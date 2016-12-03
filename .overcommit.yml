@@ -1,8 +1,8 @@
 PreCommit:
   Editorconfig:
     enabled: true
-    required_executable: "./bin/editorconfig-tools.sh"
+    required_executable: "./scripts/editorconfig-tools.sh"
     command: [
-      "./bin/editorconfig-tools.sh",
+      "./scripts/editorconfig-tools.sh",
       "check"
     ]
