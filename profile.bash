@@ -42,7 +42,7 @@ export SCALA_HOME=/usr/local/share/scala
 PATH=$PATH:$SCALA_HOME/bin
 
 # go
-export GOPATH=$HOME/documents/go
+export GOPATH=$HOME/langs/go
 PATH=$PATH:$GOPATH/bin
 
 # rvm
@@ -58,4 +58,5 @@ PATH="$PATH:$HOME/.rvm/bin"
 
 # mysql
 PATH=/usr/local/mysql/bin:$PATH
+
 export PATH
