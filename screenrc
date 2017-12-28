@@ -1,0 +1,4 @@
+defshell -bash
+bind k focus up
+bind j focus down
+password none
